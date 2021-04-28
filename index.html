@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Garden</title>
+</head>
+<body>
+
+<style>
+	*{
+		box-sizing: border-box;
+	}
+
+	body{
+		margin-top: 0px;
+		padding: 0px;
+		font: poppins;
+	}
+
+	#main{
+		width: 100%;
+		height: 50vh;
+		position: relative;
+	}
+
+	nav{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: white;
+		box-shadow: 1px 7px 11px rgba(0, 0, 0.01);
+		z-index: 1;
+	}
+
+	.logo img{
+		height: 100px;
+	}
+
+	ul{
+		list-style: none;
+		display: flex;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	.menu li a{
+		height: 40px;
+		line-height: 43px;
+		margin: 3px;
+		padding: 0px 22px;
+		display: flex;
+		font-size: 17px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		color: grey;
+	}
+
+	.hey{
+		color: #39bfbd;
+		font-weight: 500;
+		font-size: 0.7em;
+		border-bottom: 2px solid #39bfbd;
+	}
+
+	.image{
+		width: 500px;
+		height: 500px;
+	}
+
+	.image img{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	.Content{
+		display: flex;
+		width: 90%;
+		justify-content: space-around;
+		align-items: center;
+		position: absolute;
+		left: 50%;
+		right: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.main-text{
+		width: 500px;
+	}
+
+	.main-text h1{
+		font-size: 3.5em;
+		color: #1c3548;
+		margin: 0px 0px 10px 0px;
+		line-height: 60px;
+	}
+
+	.main-text p{
+		color: grey;
+	}
+
+	.btn{
+		width: 190px;
+		height: 44px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		background-color: #1db096;
+		border-radius: 20px;
+		box-shadow: 1px 7px 11px rgba(24, 139, 119, 0.2);
+	}
+
+	.btn:hover{
+		background-color: #23cdaf;
+		transition: all ease 0.2s;
+	}
+
+	.menu li a:hover{
+		background-color: #23cdaf;
+		color: white;
+		box-shadow: 1px 7px 11px rgba(24, 139, 119, 0.2);	
+		transition: all ease 0.2s;
+	}
+</style>
+
+<section id = "main">
+	<nav>
+		<a href = "a" class="logo">
+			<img src= "images/logo.jpg">
+		</a>
+
+		<span class="men"></span>
+
+		<ul class="menu">
+ 			<li><a href="#">GARDENING</a></li>
+  			<li><a href="#">INDOOR PLANTS</a></li>
+  			<li><a href="#">SHOP</a></li>
+  			<li><a href="#">FOR HIRE</a></li>
+    		<li><a href="#">CONTACT US</a></li>
+  		</ul>
+  		<a href="#" class ="hey"><strong>FEEDBACK</strong></a>
+	</nav>
+</section>
+		
+		<div class="Content">
+			<div class ="image">
+				<img src="images\main.jpg">
+			</div>
+
+			<div class="main-text">
+				<h1>A SPECIAL WELCOME TO MY VIEWERS!!</h1>
+			<p>The website consists of general ideas about the indoor plants that can be planted in your residential area. It provides information based on herbal and non-herbal plant varieties which are suitable for the indoor environment.</p>
+			<a href="#" class="btn">See My Garden</a>
+			</div>
+		</div>
+
+</body>
+</html>
